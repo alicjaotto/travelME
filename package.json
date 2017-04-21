@@ -1,0 +1,29 @@
+{
+  "name": "travelme",
+  "version": "1.0.0",
+  "description": "TRAVEL.me is a prototype of a travellers' platform to share their experiences in different countries all over the world. Each user creates an interactive world map where she or he can store memories, useful information, hints and photosand share them in the web.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "jquery": "^3.2.1",
+    "webpack": "^2.3.3"
+  },
+  "main": "webpack.config.js"
+}

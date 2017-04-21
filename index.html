@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TRAVEL.me</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="./jvectormap/jquery-jvectormap.css" type="text/css" media="screen"/>
+    <script
+      src="jquery-3.2.1.min.js"></script>
+     <script src="./jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
+
+   <!-- <script src="./jvectormap/jquery-jvectormap.js"></script> -->
+   <script src="./jvectormap/jquery-jvectormap-world-mill.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <navbar>
+        </navbar>
+
+            <div id="world-map" style="width: 1200px; height: 600px"></div>
+
+        <section id="user_panel">
+            <button id="add_btn">+</button><span>ADD A TRIP</SPAN>
+            <form id="add_travel" class="travel_form hidden">
+                <select id="in_country" name="data-code">
+                </select>
+                from: <input id="in_from" type="date" name="from">
+                to: <input id="in_to"type="date" name="to">
+                highlights: <input id="in_highlights" type="text" name="highlights">
+                description: <input id="in_description"type="text" name="description">
+                photo1: <input id="in_photo1" type="url" name="photo1">
+                photo2: <input id="in_photo2" type="url" name="photo2">
+                photo3: <input id="in_photo3" type="url" name="photo3">
+                daily budget: <input id="in_budget" type="number" name="budget">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section id="trip" class="hidden">
+            <p class="description"></p>
+                <img src="">
+        </section>
+
+
+    </div>
+
+    <script src="js/out.js"></script>
+</body>
+</html>
