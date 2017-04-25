@@ -6,6 +6,7 @@ header {
 
     h1 {
         line-height: 80px;
+        display: inline-block;
 
 
         a {
@@ -28,34 +29,63 @@ header {
     nav {
 
         vertical-align: baseline;
+        display: inline-block;
+        float: right;
 
-        #user_image {
-            height: 80px;
-            // border-radius: 50%;
-            margin-top: -81px;
-            float: right;
-        }
-
-        // #user_menu, #user_welcome{
-        //     float: right;
-        // }
-
-        .user_navbar {
-            float: right;
-            position: relative;
-
-            >li {
-                display: inline-block
+            #user_image {
+                height: 80px;
+                // border-radius: 50%;
+                // margin-top: -100px;
+                display: inline-block;
+                cursor: pointer;
 
             }
-        }
 
+            #user_menu {
+                float: right;
+
+            }
+
+            #user_welcome {
+                display: inline-block;
+                position: absolute;
+                line-height: 80px;
+                font-size: 1.3em;
+                margin-left: -220px;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.8);
+                font-weight: 300;
+            }
+
+            ul {
+
+                position: absolute;
+                display: block;
+                margin-top: 80px;
+                margin-left: -240px;
+
+                li {
+                    padding: 15px 10px 15px 10px;
+                    display: inline-block;
+
+                    a {
+                        text-decoration: none;
+                        color: #29282D;
+                        font-size: 1.2em;
+                    }
+
+                    a:hover {
+                            border-bottom: 5px solid #D9192E;
+                            color: gray;
+                    }
+
+                }
+            }
+
+        }
 
 
     }
-
-
-}
 
 .hidden {
     display: none;

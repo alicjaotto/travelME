@@ -21,26 +21,34 @@
         <div class="container">
             <span id="closeBtn" class="trip_closeBtn">X</span>
 
-            <h2 class="trip_title"> </h2>
-            <h4 class="trip_dates">
-                <span> from: </span><span class="trip_dates_from"></span>
-                <span> to: </span><span class="trip_dates_to"></span>
-            </h4>
-            <h4 class="trip_budget"></h4>
-            <ul class="trip_highlights">
-                <li id="trip_highlight1" ></li>
-                <li id="trip_highlight2"></li>
-                <li id="trip_highlight3"></li>
-                <li id="trip_highlight4"></li>
-            </ul>
+            <div class="trip_left">
+                <h2 class="trip_title"> </h2>
+                <h3 class="trip_dates">
+                    <span> from: </span><span class="trip_dates_from"></span>
+                    <span>   to: </span><span class="trip_dates_to"></span>
+                </h3>
+
+                <ul class="trip_highlights">
+                    <span>country highlights:</span>
+                    <li id="trip_highlight1" ></li>
+                    <li id="trip_highlight2"></li>
+                    <li id="trip_highlight3"></li>
+                    <li id="trip_highlight4"></li>
+                </ul>
+                <div class="trip_daily_budget">
+                    <span>daily budget</span>
+                    <h4 class="trip_budget"></h4>
+                </div>
+        </div>
 
             <p id="trip_description">
             </p>
             <div class="trip_photos">
-                <img id="trip_photo1" class="trip_photos" src="">
-                <img id="trip_photo2" class="trip_photos" src="">
-                <img id="trip_photo3" class="trip_photos" src="">
+                <img id="trip_photo1"  src="">
+                <img id="trip_photo2" src="">
+                <img id="trip_photo3" src="">
             </div>
+            <iframe id="trip_itinerary" src=""  frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </section>
 
@@ -49,20 +57,19 @@
             <div class="container clearfix">
                 <h1 id="logo"><a href="./index.html" title="main page">travel.me</a></h1>
 
-                <nav>
-                    <ul class="user_navbar">
-                        <li><span id="user_welcome"> </span></li>
-                        <li><img id="user_image" class="user_img">
-                            <ul id="user_menu" class="hidden">
-                                <li><a href="#">my profile</a></li>
-                                <li><a href="#">my community</a></li>
-                                <li><a href="#">setting</a></li>
-                                <li><a href="#">log out</a></li>
-                            </ul>
-                        </li>
-
+                <nav class="clearfix">
+                    <ul id="user_menu" class="hidden">
+                        <li><a href="#">my profile</a></li>
+                        <li><a href="#">settings</a></li>
+                        <li><a href="#">log out</a></li>
                     </ul>
 
+                    <div class="user_panel clearfix">
+                        <span id="user_welcome"></span>
+                        <img id="user_image" class="user_img">
+                    </div>
+
+                </nav>
             </div>
 
         </header>
@@ -76,7 +83,10 @@
 
         <section id="trip_form">
             <div class="container">
-                <button id="add_btn">+</button><span class="btn_span">ADD A TRIP</span>
+                <div class="add_trip">
+                    <button id="add_btn"><a href="#trip_form">+</a></button>
+                    <span class="btn_span">ADD A TRIP</span>
+                </div>
                 <form id="add_travel" class="travel_form hidden container">
 
                     <label>Country code</label>
@@ -100,8 +110,8 @@
                     <input id="in_highlights4" type="text" name="highlights4">
 
                     <br>
-                    <label>description:</label>
-                    <textarea id="in_description" name="description" rows="15" cols="60"></textarea>
+                    <label>description:</label><br>
+                    <textarea id="in_description" name="description"></textarea>
 
                     <br>
                     <label>daily budget:</label>
@@ -117,10 +127,13 @@
                     <input id="in_photo2" type="text" name="photo2" placeholder="url..">
                     <label>photo3:</label>
                     <input id="in_photo3" type="text" name="photo3" placeholder="url"...>
-
-
-
-                    <input type="submit" value="Submit">
+                    <br>
+                    <label>google itinerary</label>
+                    <input id="in_itinerary" type="url" name="itinerary" placeholder="url...">
+                    <br>
+                    <div class="submit">
+                        <input id="submit" type="submit" value="Submit">
+                    </div>
                 </form>
             </div>
         </section>

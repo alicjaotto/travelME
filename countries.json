@@ -9,12 +9,13 @@
       "highlights2": "Tien-shan mountains",
       "highlights3": "train trip to Aralsk",
       "highlights4": "Food: mutton shashlyk",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "description": "  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "photo1": "./images/kaz1.jpg",
       "photo2": "./images/kaz2.jpg",
       "photo3": "./images/kaz3.jpg",
       "budget": "20",
-      "currency": "EUR"
+      "currency": "EUR",
+      "itinerary": "https://www.google.com/maps/embed?pb=!1m44!1m12!1m3!1d9910306.838551795!2d63.08892071662582!3d43.84967806859782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m29!3e0!4m5!1s0x38836e7d16c5cbab%3A0x3d44668fad986d76!2zQcWCbWF0eSDQkNC70LzQsNGC0Ys!3m2!1d43.2220146!2d76.8512485!4m5!1s0x4200c26160a6c6bf%3A0xc25a313979c57875!2zVHVya2llc3RhbiDQotKv0YDQutGW0YHRgtCw0L0!3m2!1d43.305085399999996!2d68.2346884!4m5!1s0x418b65d238330c31%3A0x28feee2209fd6219!2zQXJhbHNrINCQ0YDQsNC7!3m2!1d46.803197!2d61.6639055!4m5!1s0x426f8c2f15a3214f%3A0xd0fd3620431f335c!2zQmHFgmNoYXN6INCR0LDQu9Kb0LDRiA!3m2!1d46.8435126!2d74.9809805!4m3!3m2!1d43.3922379!2d76.9362665!5e0!3m2!1spl!2spl!4v1493113766314"
     },
     {
       "id": "BR",
@@ -25,12 +26,13 @@
       "highlights2": "sdfghgfc",
       "highlights3": "sdfghhbgf",
       "highlights4": "sdfbvdcs",
-      "description": "dfgnbfvdcsxcdvfb",
-      "photo1": "http://gfdg.com",
-      "photo2": "http://gfdg.com",
-      "photo3": "http://gfdg.com",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "photo1": "./images/kaz2.jpg",
+      "photo2": "./images/kaz1.jpg",
+      "photo3": "./images/kaz3.jpg",
       "budget": "78",
-      "currency": "USD"
+      "currency": "USD",
+      "itinerary": "https://www.google.com/maps/embed?pb=!1m44!1m12!1m3!1d9910306.838551795!2d63.08892071662582!3d43.84967806859782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m29!3e0!4m5!1s0x38836e7d16c5cbab%3A0x3d44668fad986d76!2zQcWCbWF0eSDQkNC70LzQsNGC0Ys!3m2!1d43.2220146!2d76.8512485!4m5!1s0x4200c26160a6c6bf%3A0xc25a313979c57875!2zVHVya2llc3RhbiDQotKv0YDQutGW0YHRgtCw0L0!3m2!1d43.305085399999996!2d68.2346884!4m5!1s0x418b65d238330c31%3A0x28feee2209fd6219!2zQXJhbHNrINCQ0YDQsNC7!3m2!1d46.803197!2d61.6639055!4m5!1s0x426f8c2f15a3214f%3A0xd0fd3620431f335c!2zQmHFgmNoYXN6INCR0LDQu9Kb0LDRiA!3m2!1d46.8435126!2d74.9809805!4m3!3m2!1d43.3922379!2d76.9362665!5e0!3m2!1spl!2spl!4v1493113766314"
     },
     {
       "id": "BO",
@@ -41,12 +43,13 @@
       "highlights2": "hgfdas",
       "highlights3": "bgfsd",
       "highlights4": "fvdcsx",
-      "description": "fbbdfsd",
-      "photo1": "vfvsd",
-      "photo2": "gbvds",
-      "photo3": "bdsvdc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "photo1": "./images/kaz2.jpg",
+      "photo2": "./images/kaz1.jpg",
+      "photo3": "./images/kaz3.jpg",
       "budget": "89",
-      "currency": "EUR"
+      "currency": "EUR",
+      "itinerary": "https://www.google.com/maps/embed?pb=!1m44!1m12!1m3!1d9910306.838551795!2d63.08892071662582!3d43.84967806859782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m29!3e0!4m5!1s0x38836e7d16c5cbab%3A0x3d44668fad986d76!2zQcWCbWF0eSDQkNC70LzQsNGC0Ys!3m2!1d43.2220146!2d76.8512485!4m5!1s0x4200c26160a6c6bf%3A0xc25a313979c57875!2zVHVya2llc3RhbiDQotKv0YDQutGW0YHRgtCw0L0!3m2!1d43.305085399999996!2d68.2346884!4m5!1s0x418b65d238330c31%3A0x28feee2209fd6219!2zQXJhbHNrINCQ0YDQsNC7!3m2!1d46.803197!2d61.6639055!4m5!1s0x426f8c2f15a3214f%3A0xd0fd3620431f335c!2zQmHFgmNoYXN6INCR0LDQu9Kb0LDRiA!3m2!1d46.8435126!2d74.9809805!4m3!3m2!1d43.3922379!2d76.9362665!5e0!3m2!1spl!2spl!4v1493113766314"
     },
     {
       "id": "RU",
@@ -57,12 +60,13 @@
       "highlights2": "asdfg",
       "highlights3": "azsdfvc",
       "highlights4": "ZCvxbzz",
-      "description": "szdfbgnnbvcxzZ",
-      "photo1": "adsfdfg",
-      "photo2": "SZxdcfv",
-      "photo3": "zsxdcfvg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "photo1": "./images/kaz2.jpg",
+      "photo2": "./images/kaz1.jpg",
+      "photo3": "./images/kaz3.jpg",
       "budget": "90",
-      "currency": "USD"
+      "currency": "USD",
+      "itinerary": "https://www.google.com/maps/embed?pb=!1m44!1m12!1m3!1d9910306.838551795!2d63.08892071662582!3d43.84967806859782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m29!3e0!4m5!1s0x38836e7d16c5cbab%3A0x3d44668fad986d76!2zQcWCbWF0eSDQkNC70LzQsNGC0Ys!3m2!1d43.2220146!2d76.8512485!4m5!1s0x4200c26160a6c6bf%3A0xc25a313979c57875!2zVHVya2llc3RhbiDQotKv0YDQutGW0YHRgtCw0L0!3m2!1d43.305085399999996!2d68.2346884!4m5!1s0x418b65d238330c31%3A0x28feee2209fd6219!2zQXJhbHNrINCQ0YDQsNC7!3m2!1d46.803197!2d61.6639055!4m5!1s0x426f8c2f15a3214f%3A0xd0fd3620431f335c!2zQmHFgmNoYXN6INCR0LDQu9Kb0LDRiA!3m2!1d46.8435126!2d74.9809805!4m3!3m2!1d43.3922379!2d76.9362665!5e0!3m2!1spl!2spl!4v1493113766314"
     },
     {
       "id": "AO",
@@ -73,28 +77,47 @@
       "highlights2": "asdfg",
       "highlights3": "sdfg",
       "highlights4": "sdfg",
-      "description": "sdfdgfd",
-      "photo1": "http://gfdg.com",
-      "photo2": "http://gfdg.com",
-      "photo3": "http://gfdg.com",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "photo1": "./images/kaz2.jpg",
+      "photo2": "./images/kaz1.jpg",
+      "photo3": "./images/kaz3.jpg",
       "budget": "23",
-      "currency": "USD"
+      "currency": "USD",
+      "itinerary": "https://www.google.com/maps/embed?pb=!1m44!1m12!1m3!1d9910306.838551795!2d63.08892071662582!3d43.84967806859782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m29!3e0!4m5!1s0x38836e7d16c5cbab%3A0x3d44668fad986d76!2zQcWCbWF0eSDQkNC70LzQsNGC0Ys!3m2!1d43.2220146!2d76.8512485!4m5!1s0x4200c26160a6c6bf%3A0xc25a313979c57875!2zVHVya2llc3RhbiDQotKv0YDQutGW0YHRgtCw0L0!3m2!1d43.305085399999996!2d68.2346884!4m5!1s0x418b65d238330c31%3A0x28feee2209fd6219!2zQXJhbHNrINCQ0YDQsNC7!3m2!1d46.803197!2d61.6639055!4m5!1s0x426f8c2f15a3214f%3A0xd0fd3620431f335c!2zQmHFgmNoYXN6INCR0LDQu9Kb0LDRiA!3m2!1d46.8435126!2d74.9809805!4m3!3m2!1d43.3922379!2d76.9362665!5e0!3m2!1spl!2spl!4v1493113766314"
     },
     {
-      "id": "NO",
-      "country_name": "Norway",
-      "from": "2017-01-01",
-      "to": "2017-01-26",
+      "id": "BG",
+      "country_name": "Bulgaria",
+      "from": "2017-04-05",
+      "to": "2017-04-20",
+      "highlights1": "edfghjk",
+      "highlights2": "asdfghj",
+      "highlights3": "asdfgfvd",
+      "highlights4": "cxZAsdfgfs",
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "budget": "56",
+      "currency": "USD",
+      "photo1": "./images/kaz1.jpg",
+      "photo2": "./images/kaz2.jpg",
+      "photo3": "./images/kaz3.jpg",
+      "itinerary": "https://www.google.com/maps/embed?pb=!1m44!1m12!1m3!1d9910306.838551795!2d63.08892071662582!3d43.84967806859782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m29!3e0!4m5!1s0x38836e7d16c5cbab%3A0x3d44668fad986d76!2zQcWCbWF0eSDQkNC70LzQsNGC0Ys!3m2!1d43.2220146!2d76.8512485!4m5!1s0x4200c26160a6c6bf%3A0xc25a313979c57875!2zVHVya2llc3RhbiDQotKv0YDQutGW0YHRgtCw0L0!3m2!1d43.305085399999996!2d68.2346884!4m5!1s0x418b65d238330c31%3A0x28feee2209fd6219!2zQXJhbHNrINCQ0YDQsNC7!3m2!1d46.803197!2d61.6639055!4m5!1s0x426f8c2f15a3214f%3A0xd0fd3620431f335c!2zQmHFgmNoYXN6INCR0LDQu9Kb0LDRiA!3m2!1d46.8435126!2d74.9809805!4m3!3m2!1d43.3922379!2d76.9362665!5e0!3m2!1spl!2spl!4v1493113766314"
+    },
+    {
+      "id": "AE",
+      "country_name": "Afghanistan",
+      "from": "",
+      "to": "",
       "highlights1": "",
       "highlights2": "",
       "highlights3": "",
       "highlights4": "",
       "description": "",
-      "budget": "100",
+      "budget": "",
       "currency": "EUR",
       "photo1": "",
       "photo2": "",
-      "photo3": ""
+      "photo3": "",
+      "itinerary": ""
     }
   ]
 }

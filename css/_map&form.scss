@@ -9,38 +9,54 @@
 .travel_form {
     display: block;
     margin: 20px 0;
-    padding: 70px 10px 70px 10px;
+    padding: 50px 10px 70px 10px;
 }
 
 .hidden {
     display: none;
 }
 
-#add_btn {
-    height: 50px;
-    width: 50px;
-    background-color: #D9192E;
-    border-radius: 50%;
-    color: white;
-    font-size: 36px;
-    font-weight: bold;
-    box-shadow: none;
-    margin: 10px;
-    line-height: 40px;
-    cursor: pointer;
-    border: 0;
-    margin-bottom: 40px;
+.add_trip {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    #add_btn {
+        height: 50px;
+        width: 50px;
+        background-color: #D9192E;
+        border-radius: 50%;
+        box-shadow: none;
+        margin: 10px;
+        cursor: pointer;
+        border: 0;
+        margin-bottom: 20px;
+
+        a {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 40px;
+            text-decoration: none;
+        }
+    }
+
+    .btn_span {
+        font-size: 30px;
+        line-height: 40px;
+        color: gray;
+        font-weight: 300;
+    }
+
 }
 
-.btn_span {
-    font-size: 30px;
-    line-height: 50px;
-    color: gray;
-    font-weight: 300;
-}
+
 
 form {
-    margin: 15px 0 30px 0;
+    margin: 5px 0 30px 0;
     font-size: 14px;
     input, textarea {
         border: 1px solid gray;
@@ -50,15 +66,48 @@ form {
         display: inline-block;
     }
 
+
     label {
         font-size: 1.4em;
         color: #D9192E;
         text-transform: uppercase;
-        padding: 5px 10px;
+        padding: 5px 5px;
     }
 
     select {
         background-color: white;
         font-size: 1.2em;
     }
+
+    textarea {
+        width: 100%;
+        height: 350px;
+    }
+
+    #in_photo1, #in_photo2, #in_photo3, #in_highlights1, #in_highlights2, #in_highlights3, #in_highlights4 {
+        margin-right: 20px;
+        width: 238px;
+    }
+
+    .submit {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #submit {
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+            background-color: #D9192E;
+            font-size: 1.6em;
+            text-transform: uppercase;
+            border: none;
+            padding: 0;
+            color: white;
+            font-weight: bold;
+
+        }
+    }
+
 }

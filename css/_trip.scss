@@ -12,28 +12,125 @@
     }
 
     h2 {
-        font-size: 3em;
-        text-transform: uppercase;
-        margin: 20px 0 10px 0;
+        font-size: 6.5em;
+        // text-transform: uppercase;
+        margin: 50px 0 10px 0;
+        font-family: "Satisfy";
+        color: #29282D;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .trip_left {
+        // display: inline-block;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    p {
+        width: 50%;
+        font-family: "Lora";
+        font-size: 22px;
+        border-left: 1px solid #D9192E;
+        border-right: 1px solid #D9192E;
+        padding: 10px 30px 10px 30px;
+        color: #29282D;
+        display: inline-block;
+        float: right;
+        margin: 50px 0;
 
     }
 
     .trip_dates {
+        width: 100%;
         font-size: 1.6em;
         font-family: "Lora";
+        padding-left: 80px;
+
+            span {
+                font-weight: 300;
+                color: gray;
+            }
+
+            .trip_dates_from, .trip_dates_to {
+                font-weight: normal;
+                color: #29282D;
+            }
     }
 
+    .trip_highlights {
+        width: 100%;
+        margin: 30px 0;
+
+            span {
+                font-size: 1.5em;
+                margin: 10px 30px;
+                text-transform: uppercase;
+                text-align: center;
+                color: #D9192E;
+                display: block;
+                font-weight: bold;
+            }
+
+            li {
+                    text-align: center;
+                    font-size: 1.3em;
+                    padding: 5px 0;
+                    width: 100%;
+                }
+            }
+
+    .trip_daily_budget {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: gray;
+        font-size: 1.1em;
+        margin-left: 30px;
+        margin-bottom: 30px;
+
+            h4 {
+                font-size: 1.3em;
+                color: #D9192E;
+
+            }
+    }
+
+
     .trip_photos {
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 20px 0;
+        width: 100%;
+        margin: 20px 0;
 
         img {
             display: inline;
-            width: 33%;
+            width: 32%;
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
 
         }
+
+        img:hover {
+            filter: none;
+        }
+    }
+
+    iframe {
+        width: 100%;
+        height: 450px;
+        margin: 30px 0;
     }
 
 }

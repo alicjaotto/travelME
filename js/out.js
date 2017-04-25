@@ -83,13 +83,13 @@ document.addEventListener('DOMContentLoaded', function(){
     const userImage = $('#user_image');
     userImage.attr("src", avatar);
 
-    userImage.on("mouseenter", (event) => {
+    userImage.on("click", (event) => {
         $('#user_menu').toggleClass('hidden');
     });
 
-    userImage.on("mouseleave", (event) => {
-        $('#user_menu').toggleClass('hidden');
-    });
+    // userImage.on("mouseleave", (event) => {
+    //     $('#user_menu').toggleClass('hidden');
+    // });
 
     //creating a map
 
@@ -212,6 +212,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 $('#in_photo3').val('');
                 $('#in_budget').val('');
                 $('#in_currency').val('');
+                $('#in_itinerary').val('');
 
                 $('#add_travel').addClass("hidden");
                 ColorUserCountries();
@@ -254,6 +255,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 $('#trip_photo1').attr("src", result.photo1);
                 $('#trip_photo2').attr("src", result.photo2);
                 $('#trip_photo3').attr("src", result.photo3);
+                $('#trip_itinerary').attr("src", result.itinerary);
 
                 $('#trip').toggleClass('hidden');
                 $('#world-map').toggleClass('hidden');
