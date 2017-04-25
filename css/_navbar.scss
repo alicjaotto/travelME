@@ -3,6 +3,9 @@ header {
     background-color: #29282D;
     width: 100%;
     vertical-align: baseline;
+    -webkit-box-shadow: 0px 3px 21px -1px rgba(0,0,0,0.49);
+    -moz-box-shadow: 0px 3px 21px -1px rgba(0,0,0,0.49);
+    box-shadow: 0px 3px 21px -1px rgba(0,0,0,0.49);
 
     h1 {
         line-height: 80px;
@@ -38,7 +41,21 @@ header {
                 // margin-top: -100px;
                 display: inline-block;
                 cursor: pointer;
+                border-left: 12px solid #D9192E;
+                border-right: 12px solid #D9192E;
 
+            }
+
+            .user_image_badge {
+                background-color: rgba(0,0,0,0.4);
+                -webkit-clip-path: polygon(100% 0%, 100% 48%, 100% 100%, 50% 20%, 0 100%, 0 0);
+                clip-path: polygon(100% 0%, 100% 48%, 100% 100%, 50% 20%, 0 100%, 0 0);
+                width: 104px;
+                height: 85px;
+                border-left: 12px solid #D9192E;
+                border-right: 12px solid #D9192E;
+                margin-top: -5px;
+                z-index: 0;
             }
 
             #user_menu {
@@ -62,7 +79,7 @@ header {
                 position: absolute;
                 display: block;
                 margin-top: 80px;
-                margin-left: -240px;
+                margin-left: -340px;
 
                 li {
                     padding: 15px 10px 15px 10px;

@@ -27,13 +27,21 @@
     #add_btn {
         height: 50px;
         width: 50px;
-        background-color: #D9192E;
+        // background-color: #D9192E;
         border-radius: 50%;
         box-shadow: none;
         margin: 10px;
         cursor: pointer;
         border: 0;
         margin-bottom: 20px;
+        background: rgb(211,82,95); /* Old browsers */
+        background: -moz-linear-gradient(-45deg, rgba(211,82,95,1) 0%, rgba(217,25,46,1) 47%, rgba(198,0,53,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, rgba(211,82,95,1) 0%,rgba(217,25,46,1) 47%,rgba(198,0,53,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, rgba(211,82,95,1) 0%,rgba(217,25,46,1) 47%,rgba(198,0,53,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3525f', endColorstr='#c60035',GradientType=1 );
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
 
         a {
             color: white;
@@ -64,6 +72,8 @@ form {
         padding: 10px;
         margin: 15px 0 15px 0;
         display: inline-block;
+        font-size: 1.2em;
+        text-align: center;
     }
 
 
@@ -82,6 +92,7 @@ form {
     textarea {
         width: 100%;
         height: 350px;
+        text-align: left;
     }
 
     #in_photo1, #in_photo2, #in_photo3, #in_highlights1, #in_highlights2, #in_highlights3, #in_highlights4 {
@@ -99,14 +110,21 @@ form {
             width: 200px;
             height: 60px;
             line-height: 60px;
-            background-color: #D9192E;
+            cursor: pointer;
             font-size: 1.6em;
             text-transform: uppercase;
             border: none;
             padding: 0;
             color: white;
             font-weight: bold;
-
+            background: rgb(214,70,85); /* Old browsers */
+            background: -moz-linear-gradient(top, rgba(214,70,85,1) 0%, rgba(217,25,46,1) 47%, rgba(198,0,53,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(214,70,85,1) 0%,rgba(217,25,46,1) 47%,rgba(198,0,53,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(214,70,85,1) 0%,rgba(217,25,46,1) 47%,rgba(198,0,53,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d64655', endColorstr='#c60035',GradientType=0 ); /* IE6-9 */
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
         }
     }
 
