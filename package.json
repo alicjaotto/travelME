@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "homepage": "",
-  "dependencies": {},
+  "dependencies": {
+      "firebase": "^3.8.0"
+  },
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
@@ -23,6 +25,10 @@
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
     "jquery": "^3.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
     "webpack": "^2.3.3"
   },
   "main": "webpack.config.js"

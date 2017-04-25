@@ -1,6 +1,25 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-//utworzenie mapy
+    //creating user navigation bar (will be more developed when log in function is created)
+
+    var username = "Alicja";
+
+    $('#user_welcome').text(`Welcome, ${username}!`);
+
+    var avatar = "./images/avatar.jpg";
+
+    const userImage = $('#user_image');
+    userImage.attr("src", avatar);
+
+    userImage.on("mouseenter", (event) => {
+        $('#user_menu').toggleClass('hidden');
+    });
+
+    userImage.on("mouseleave", (event) => {
+        $('#user_menu').toggleClass('hidden');
+    });
+
+    //creating a map
 
     $(function(){
       $('#world-map').vectorMap({
@@ -15,6 +34,33 @@ document.addEventListener('DOMContentLoaded', function(){
         }
 
       });
+
+      $('path').css("fill", "#cccccc");
+
+     //coloring user's visited countries
+
+     var ColorUserCountries = () => {
+         $.ajax({
+             type: "GET",
+             url: 'http://localhost:3000/countries',
+             dataType: 'json'
+         }).done(function(response) {
+             console.log(response.length);
+             $.each(response, (index, element)=>{
+                 console.log(element.id);
+                 for (let i=0; i<countries.length; i++) {
+                     if(element.id === $(countries[i]).data("code")) {
+                         $(countries[i]).css("fill", "#7C9BA0");
+                     }
+                 }
+             })
+             }).fail(function(response){
+            console.log("error");
+        });
+
+     }
+
+    ColorUserCountries();
 
     //creating options list based on data-codes
     var countries_names = ["United Arab Emirates", "Afghanistan","Albania", "Armenia","Angola","Argentina", "Austria","Australia", "Azerbaijan", "Bosnia and Herzegovina", "Bangladesh", "Belgium","Burkina Faso","Bulgaria","Burundi","Benin", "Brunei","Bolivia", "Brazil", "Bahamas", "Bhutan", "Botswana", "Belarus", "Belize", "Canada", "Democratic Republic of the Congo", "Central African Republic",	"Congo", "Switzerland", "Côte d'Ivoire", "Chile", "Cameroon", "China", "Colombia", "Costa Rica", "Cuba", "Cyprus", "Czech Republic", "Germany", "Djibouti", "Denmark", "Dominican Republic", "Algeria", "Ecuador", "Estonia", "Egypt", "Western Sahara", "Eritrea", "Spain", "Ethiopia", "Finland", "Fiji", "Falkland Islands", "France","Gabon",
@@ -31,32 +77,43 @@ document.addEventListener('DOMContentLoaded', function(){
         codes = codes.sort();
         console.log(codes);
 
-        var select_list = $("select");
-        console.log(select_list[0]);
+        var codes_list = $("#in_country_code");
+        console.log(codes_list[0]);
 
-
-        var CreateOptions = ()=> {
+        var CreateCodeOptions = ()=> {
             for (let i=0; i<codes.length; i++) {
-                var option = $("<option></option>");
+                let option = $("<option></option>");
                 $(option[0]).attr("value", codes[i]);
 
                     for (let j=i; j<countries_names.length; j++)
-                        $(option[0]).text(countries_names[i]);
-                        $(select_list[0]).append(option[0]);
+                        $(option[0]).text(codes[i] + " " + countries_names[i]);
+                        $(codes_list[0]).append(option[0]);
 
             }
 
         }
 
-        CreateOptions();
+        const CreateCountriesOptions = () => {
+            const countries_list = countries_names.sort();
+            for (let i=0; i<countries_list.length; i++) {
+                let country_option = $("<option></option>");
+                $(country_option[0]).attr("value", countries_names[i]);
+                $(country_option[0]).text(countries_names[i]);
+                $('#in_country').append(country_option[0]);
+
+            }
+        }
+
+        CreateCodeOptions();
+        CreateCountriesOptions();
 
 
-//showing/ hiding travel form
-$('#add_btn').on('click', (event) => {
+    //showing/ hiding travel form
+    $('#add_btn').on('click', (event) => {
     $('#add_travel').toggleClass("hidden");
 });
 
-//sending form values to JSON server
+    //sending form values to JSON server
 
     $(function() {
         $('#add_travel').submit(function(event) {
@@ -70,20 +127,25 @@ $('#add_btn').on('click', (event) => {
                 dataType: 'json'
             }).done(function(data) {
                 $('#in_country').val('');
+                $('#in_country_code').val('');
                 $('#in_from').val('');
                 $('#in_to').val('');
                 $('#in_description').val('');
-                $('#in_highlights').val('');
+                $('#in_highlights1').val('');
+                $('#in_highlights2').val('');
+                $('#in_highlights3').val('');
+                $('#in_highlights4').val('');
                 $('#in_photo1').val('');
                 $('#in_photo2').val('');
                 $('#in_photo3').val('');
                 $('#in_budget').val('');
+                $('#in_currency').val('');
 
                 $('#add_travel').addClass("hidden");
-
+                ColorUserCountries();
 
         }).fail(function(data) {
-            console.log(error);
+            alert("Sorry, probably you've already been to this country!");
             });
         });
     });
@@ -92,26 +154,56 @@ $('#add_btn').on('click', (event) => {
 
 //reqesting countries info from json server by clicking on a country
 
-
-
     $.each(countries, (index, el) => {
         $(el).on('click', (event) => {
-            const country_code = $(event.target).attr("data-code");
+            var country_code = $(event.target).attr("data-code");
             console.log(country_code);
             $(event.target).attr("fill", "yellow");
-        //     $.ajax({
-        //         type: "GET",
-        //         url: 'http://localhost:3000/countries',
-        //         dataType: 'json'
-        //     }).done(function(response) {
-        //         console.log(response);
-        //
-        // }).fail(function(response) {
-        //     console.log(error);
-        //     });
+
+            $.ajax({
+                type: "GET",
+                url: 'http://localhost:3000/countries',
+                dataType: 'json'
+            }).done(function(response) {
+                var result = $.grep(response, function(element, index) {
+                    return element.id == country_code;
+                });
+                result = result[0];
+
+                $('h2').text(result.country_name);
+                $('.trip_dates_from').text(result.from);
+                $('.trip_dates_to').text(result.to);
+                $('.trip_budget').text(result.budget + " " + result.currency);
+                $('#trip_highlight1').text(result.highlights1);
+                $('#trip_highlight2').text(result.highlights2);
+                $('#trip_highlight3').text(result.highlights3);
+                $('#trip_highlight4').text(result.highlights4);
+                $('#trip_description').text(result.description);
+                $('#trip_photo1').attr("src", result.photo1);
+                $('#trip_photo2').attr("src", result.photo2);
+                $('#trip_photo3').attr("src", result.photo3);
+
+                $('#trip').toggleClass('hidden');
+                $('#world-map').toggleClass('hidden');
+                $('#trip_form').toggleClass('hidden');
+                $('header').toggleClass('hidden');
+
+        }).fail(function(response) {
+            console.log(error);
+            });
         });
 
 
+    });
+
+
+    //closing country section
+    $("#closeBtn").on("click", (event) => {
+
+        $('#trip').toggleClass('hidden');
+        $('#world-map').toggleClass('hidden');
+        $('#trip_form').toggleClass('hidden');
+        $('header').toggleClass('hidden');
     });
 
   });

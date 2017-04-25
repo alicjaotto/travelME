@@ -1108,24 +1108,24 @@ jvm.Map.defaultParams = {
   regionsSelectable: false,
   markersSelectable: false,
   bindTouchEvents: true,
-  regionStyle: {
-    initial: {
-      fill: 'white',
-      "fill-opacity": 1,
-      stroke: 'none',
-      "stroke-width": 0,
-      "stroke-opacity": 1
-    },
-    hover: {
-      "fill-opacity": 0.8,
-      cursor: 'pointer'
-    },
-    selected: {
-      fill: 'yellow'
-    },
-    selectedHover: {
-    }
-  },
+  // regionStyle: {
+  //   initial: {
+  //     fill: 'white',
+  //     "fill-opacity": 1,
+  //     stroke: 'none',
+  //     "stroke-width": 0,
+  //     "stroke-opacity": 1
+  //   },
+  //   hover: {
+  //     "fill-opacity": 0.8,
+  //     cursor: 'pointer'
+  //   },
+  //   selected: {
+  //     fill: 'yellow'
+  //   },
+  //   selectedHover: {
+  //   }
+  // },
   regionLabelStyle: {
     initial: {
       'font-family': 'Verdana',
@@ -1138,26 +1138,26 @@ jvm.Map.defaultParams = {
       cursor: 'pointer'
     }
   },
-  markerStyle: {
-    initial: {
-      fill: 'grey',
-      stroke: '#505050',
-      "fill-opacity": 1,
-      "stroke-width": 1,
-      "stroke-opacity": 1,
-      r: 5
-    },
-    hover: {
-      stroke: 'black',
-      "stroke-width": 2,
-      cursor: 'pointer'
-    },
-    selected: {
-      fill: 'blue'
-    },
-    selectedHover: {
-    }
-  },
+  // markerStyle: {
+  //   initial: {
+  //     fill: 'grey',
+  //     stroke: '#505050',
+  //     "fill-opacity": 1,
+  //     "stroke-width": 1,
+  //     "stroke-opacity": 1,
+  //     r: 5
+  //   },
+  //   hover: {
+  //     stroke: 'black',
+  //     "stroke-width": 2,
+  //     cursor: 'pointer'
+  //   },
+  //   selected: {
+  //     fill: 'blue'
+  //   },
+  //   selectedHover: {
+  //   }
+  // },
   markerLabelStyle: {
     initial: {
       'font-family': 'Verdana',

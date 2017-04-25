@@ -1,0 +1,62 @@
+header {
+    height: 80px;
+    background-color: #29282D;
+    width: 100%;
+    vertical-align: baseline;
+
+    h1 {
+        line-height: 80px;
+
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: "Satisfy";
+            font-weight: normal;
+            font-size: 1.5em;
+            position: relative;
+
+        }
+
+        a:hover {
+                color: #D9192E;
+
+            }
+
+    }
+
+    nav {
+
+        vertical-align: baseline;
+
+        #user_image {
+            height: 80px;
+            // border-radius: 50%;
+            margin-top: -81px;
+            float: right;
+        }
+
+        // #user_menu, #user_welcome{
+        //     float: right;
+        // }
+
+        .user_navbar {
+            float: right;
+            position: relative;
+
+            >li {
+                display: inline-block
+
+            }
+        }
+
+
+
+    }
+
+
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,39 @@
+.trip {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 2;
+
+    #closeBtn {
+        float: right;
+        font-size: 1.5em;
+        color: gray;
+        cursor: pointer;
+    }
+
+    h2 {
+        font-size: 3em;
+        text-transform: uppercase;
+        margin: 20px 0 10px 0;
+
+    }
+
+    .trip_dates {
+        font-size: 1.6em;
+        font-family: "Lora";
+    }
+
+    .trip_photos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+
+        img {
+            display: inline;
+            width: 33%;
+
+        }
+    }
+
+}
