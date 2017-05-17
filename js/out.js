@@ -284,7 +284,6 @@ document.addEventListener('DOMContentLoaded', function(){
         $(el).on('click', (event) => {
             var country_code = $(event.target).attr("data-code");
             console.log(country_code);
-            $(event.target).attr("fill", "yellow");
 
             $(function(){
 
@@ -293,15 +292,34 @@ document.addEventListener('DOMContentLoaded', function(){
 
                 //reading data from firebase
                 countriesRef.on("value", function(snapshot){
-                    // snapshot.forEach(function(childSnapshot) {
-                    //     var id = childSnapshot.val().id;
-                    //     console.log(id);
-                    //     for (let i=0; i<countries.length; i++) {
-                    //         if (id === $(countries[i]).data("code")) {
-                    //             $(countries[i]).css("fill", "#7C9BA0");
-                    //         }
-                    //     }
-                    // });
+                    snapshot.forEach(function(childSnapshot) {
+                        var id = childSnapshot.val().id;
+                        var result = childSnapshot.val();
+                        console.log(result);
+                            if (id === country_code) {
+                                console.log("to dobry kraj");
+                                $('h2').text(result.country_name);
+                                $('.trip_dates_from').text(result.from);
+                                $('.trip_dates_to').text(result.to);
+                                $('.trip_budget').text(result.budget + " " + result.currency);
+                                $('#trip_highlight1').text(result.highlights1);
+                                $('#trip_highlight2').text(result.highlights2);
+                                $('#trip_highlight3').text(result.highlights3);
+                                $('#trip_highlight4').text(result.highlights4);
+                                $('#trip_description').text(result.description);
+                                $('#trip_photo1').attr("src", result.photo1);
+                                $('#trip_photo2').attr("src", result.photo2);
+                                $('#trip_photo3').attr("src", result.photo3);
+                                $('#trip_itinerary').attr("src", result.itinerary);
+
+                                $('#trip').toggleClass('hidden');
+                                $('#world-map').toggleClass('hidden');
+                                $('#trip_form').toggleClass('hidden');
+                                $('header').toggleClass('hidden');
+
+                            }
+
+                    });
 
                 });
             });
