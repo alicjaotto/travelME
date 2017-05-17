@@ -138,7 +138,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
         //listening updates in firebase
              countriesRef.on("value", function(snapshot){
-                 console.log(snapshot.val() );
 
             //updating data value
             data = snapshot.val();
@@ -146,7 +145,6 @@ document.addEventListener('DOMContentLoaded', function(){
             $('#add_travel').submit(function(event) {
 
                 var form = $(this);
-                console.log("submit to firebase");
 
                 //preventing defualt action on a submit button
                 $(form).find("#submit").prop('disabled', true);
@@ -192,8 +190,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
                 data.push(newCountry);
 
-                console.log(data);
-
                 countriesRef.set(data);
 
 
@@ -211,7 +207,6 @@ document.addEventListener('DOMContentLoaded', function(){
     $.each(countries, (index, el) => {
         $(el).on('click', (event) => {
             var country_code = $(event.target).attr("data-code");
-            console.log(country_code);
 
             $(function(){
 
@@ -223,7 +218,6 @@ document.addEventListener('DOMContentLoaded', function(){
                     snapshot.forEach(function(childSnapshot) {
                         var id = childSnapshot.val().id;
                         var result = childSnapshot.val();
-                        console.log(result);
                             if (id === country_code) {
                                 console.log("to dobry kraj");
                                 $('h2').text(result.country_name);
