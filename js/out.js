@@ -138,10 +138,10 @@ document.addEventListener('DOMContentLoaded', function(){
         });
 
         codes = codes.sort();
-        console.log(codes);
+        // console.log(codes);
 
         var codes_list = $("#in_country_code");
-        console.log(codes_list[0]);
+        // console.log(codes_list[0]);
 
         var CreateCodeOptions = ()=> {
             for (let i=0; i<codes.length; i++) {
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function(){
         countriesRef.on("value", function(snapshot){
             snapshot.forEach(function(childSnapshot) {
                 var id = childSnapshot.val().id;
-                console.log(id);
+                // console.log(id);
                 for (let i=0; i<countries.length; i++) {
                     if (id === $(countries[i]).data("code")) {
                         $(countries[i]).css("fill", "#7C9BA0");
@@ -224,13 +224,11 @@ document.addEventListener('DOMContentLoaded', function(){
                 //creating data to send
 
                 let nameToSend = $('#in_country').val();
-                console.log(nameToSend);
                 let idToSend = $('#in_country_code').val();
                 let fromToSend = $('#in_from').val();
                 let toToSend = $('#in_to').val();
                 let descriptionToSend = $('#in_description').val();
                 let h1ToSend = $('#in_highlights1').val();
-                console.log(h1ToSend);
                 let h2ToSend = $('#in_highlights2').val();
                 let h3ToSend = $('#in_highlights3').val();
                 let h4ToSend = $('#in_highlights4').val();
@@ -291,7 +289,6 @@ document.addEventListener('DOMContentLoaded', function(){
                         var id = childSnapshot.val().id;
                         var result = childSnapshot.val();
                             if (id === country_code) {
-                                console.log("to dobry kraj");
                                 $('h2').text(result.country_name);
                                 $('.trip_dates_from').text(result.from);
                                 $('.trip_dates_to').text(result.to);
